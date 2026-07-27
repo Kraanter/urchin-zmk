@@ -102,7 +102,7 @@
             label = "Base";
             bindings = <
 &kp Q               &kp W       &kp E               &kp R             &kp T            &kp Y      &kp U              &kp I                &kp O       &kp P
-&mt LEFT_COMMAND A  &mt LALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G            &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RALT L  &mt RIGHT_COMMAND SEMICOLON
+&qt LEFT_COMMAND A  &qt LALT S  &qt LEFT_CONTROL D  &qt LEFT_SHIFT F  &kp G            &kp H      &qt RIGHT_SHIFT J  &qt RIGHT_CONTROL K  &qt RALT L  &qt RIGHT_COMMAND SEMICOLON
 &kp Z               &kp X       &kp C               &kp V             &kp B            &kp N      &kp M              &kp COMMA            &kp DOT     &qt RIGHT_SHIFT ENTER
                                                     &mo EXT           &lt 7 BACKSPACE  &kp SPACE  &sl 1
             >;
