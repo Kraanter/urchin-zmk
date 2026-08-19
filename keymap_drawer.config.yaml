@@ -1,0 +1,80 @@
+draw_config:
+  dark_mode: auto
+  n_columns: 2
+  key_w: 58
+  key_h: 54
+  split_gap: 34
+  outer_pad_w: 42
+  outer_pad_h: 38
+  key_rx: 9
+  key_ry: 9
+  draw_key_sides: true
+  key_side_pars:
+    rel_y: 3
+    rel_w: 8
+    rel_h: 8
+    rx: 6
+    ry: 6
+  footer_text: Urchin / ZMK
+  svg_extra_style: |
+    svg.keymap {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      fill: #e7edf7;
+      background: #10131a;
+    }
+
+    rect.key {
+      fill: #202636;
+    }
+
+    rect.side {
+      fill: #161b27;
+    }
+
+    rect.key, rect.combo {
+      stroke: #5f6f8f;
+      stroke-width: 1.2;
+    }
+
+    rect.held, rect.combo.held {
+      fill: #513a22;
+      stroke: #f7b267;
+    }
+
+    rect.combo, rect.combo-separate {
+      fill: #273d56;
+      stroke: #70d6ff;
+    }
+
+    text.label, text.footer {
+      fill: #70d6ff;
+      stroke: #10131a;
+      stroke-width: 5;
+      paint-order: stroke;
+      letter-spacing: 0.04em;
+    }
+
+    text.hold, text.shifted, text.left, text.right, text.combo {
+      fill: #f7b267;
+    }
+
+    text.trans {
+      fill: #5f6f8f;
+    }
+
+    path.combo {
+      stroke: #70d6ff;
+      stroke-width: 1.5;
+    }
+
+parse_config:
+  raw_binding_map:
+    "&bootloader": BOOT
+    "&studio_unlock": STUDIO
+    "&unstick": UNSTICK
+  layer_legend_map:
+    Sym.: SYM
+    Sym.2: SYM2
+    FRow: FN
+    Sett.: SET
